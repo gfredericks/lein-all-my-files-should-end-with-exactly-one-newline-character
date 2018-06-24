@@ -1,3 +1,11 @@
+# Regrets
+
+In hindsight, this probably should just be a bash script, especially since
+you'd likely want to apply it to all text files, not just clojure source.
+
+But I'll keep it here, in case somebody finds it useful and also because
+it has a silly name.
+
 # lein-all-my-files-should-end-with-exactly-one-newline-character
 
 lein-all-my-files-should-end-with-exactly-one-newline-character is a
