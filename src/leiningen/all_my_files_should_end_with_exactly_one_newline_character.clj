@@ -52,7 +52,9 @@ USAGE:
   (let [all-files (all-files project)]
     (case (first args)
       ("but-do-they?" "check") (main/exit (core/but-do-they? all-files))
-      ("so-fix-them"  "fix")   (core/so-fix-them  all-files)
+      ("so-fix-them"  "fix")   (core/so-fix-them all-files)
+      "check-zero"             (main/exit (core/but-do-they? all-files :expected-newline-count 0))
+      "fix-zero"               (core/so-fix-them all-files :expected-newline-count 0)
       (do
         (println usage)
         (main/exit 1)))))
