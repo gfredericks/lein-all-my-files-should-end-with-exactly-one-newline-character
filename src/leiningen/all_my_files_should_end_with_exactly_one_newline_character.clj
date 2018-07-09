@@ -2,7 +2,7 @@
   "Lint clojure files for file-ending newlines."
   (:require
    [clojure.java.io :as io]
-   [gfredericks.all-my-files-should-end-with-exactly-one-newline-character :as core]
+   [com.gfredericks.all-my-files-should-end-with-exactly-one-newline-character :as core]
    [leiningen.core.main :as main]))
 
 ;; next four functions are pasted from cljfmt

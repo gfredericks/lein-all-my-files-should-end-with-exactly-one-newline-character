@@ -1,4 +1,4 @@
-(ns gfredericks.all-my-files-should-end-with-exactly-one-newline-character
+(ns com.gfredericks.all-my-files-should-end-with-exactly-one-newline-character
   "Lint clojure files for file-ending newlines.")
 
 (defn ^:private scan
