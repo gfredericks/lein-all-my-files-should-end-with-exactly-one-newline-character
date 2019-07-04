@@ -1,4 +1,4 @@
-(defproject com.gfredericks/lein-all-my-files-should-end-with-exactly-one-newline-character "0.1.2-SNAPSHOT"
+(defproject com.gfredericks/lein-all-my-files-should-end-with-exactly-one-newline-character "0.1.2"
   :description "A Clojure linter that enforces end-of-file newlines."
   :url "https://github.com/gfredericks/lein-all-my-files-should-end-with-exactly-one-newline-character"
   :license {:name "Eclipse Public License"

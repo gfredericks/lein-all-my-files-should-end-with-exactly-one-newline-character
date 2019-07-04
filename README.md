@@ -14,7 +14,7 @@ exactly one newline character.
 
 ## Obtention
 
-Add `[com.gfredericks/lein-all-my-files-should-end-with-exactly-one-newline-character "0.1.1"]`
+Add `[com.gfredericks/lein-all-my-files-should-end-with-exactly-one-newline-character "0.1.2"]`
 to the `:plugins` vector of your project.clj or `:user` profile.
 
 ## Usage
