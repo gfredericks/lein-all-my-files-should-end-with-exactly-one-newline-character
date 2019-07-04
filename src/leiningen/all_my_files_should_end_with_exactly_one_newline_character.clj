@@ -38,6 +38,11 @@
 (def usage
   "USAGE: lein all-my-files-should-end-with-exactly-one-newline-character [but-do-they? | so-fix-them]")
 
+(defn exit-if-pos
+  [exit-code]
+  (when (pos? exit-code)
+    (main/exit exit-code)))
+
 (defn all-my-files-should-end-with-exactly-one-newline-character
   "Lint clojure file-ending newlines.
 
@@ -51,9 +56,9 @@ USAGE:
   [project & args]
   (let [all-files (all-files project)]
     (case (first args)
-      ("but-do-they?" "check") (main/exit (core/but-do-they? all-files))
+      ("but-do-they?" "check") (exit-if-pos (core/but-do-they? all-files))
       ("so-fix-them"  "fix")   (core/so-fix-them all-files)
-      "check-zero"             (main/exit (core/but-do-they? all-files :expected-newline-count 0))
+      "check-zero"             (exit-if-pos (core/but-do-they? all-files :expected-newline-count 0))
       "fix-zero"               (core/so-fix-them all-files :expected-newline-count 0)
       (do
         (println usage)
